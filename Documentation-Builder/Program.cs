@@ -40,9 +40,9 @@ namespace Documentation_Builder
 
             List<string> packageIDs = new List<string>()
             {
-                "WPILib",
-                "WPILib.Extras",
-                "NetworkTablesDotNet",
+                "FRC.NetworkTables",
+                "FRC.WPILib",
+                "FRC.WPILib.Extras",
             };
             IPackageRepository repo =
                 PackageRepositoryFactory.Default.CreateRepository("https://packages.nuget.org/api/v2");
@@ -63,20 +63,20 @@ namespace Documentation_Builder
             }
 
             //Copy packages to sandcastle directory
-            if (Directory.Exists("Sandcastle\\sources"))
+            if (Directory.Exists("sources"))
             {
-                foreach (var file in Directory.GetFiles("Sandcastle\\sources"))
+                foreach (var file in Directory.GetFiles("sources"))
                 {
                     File.Delete(file);
                 }
-                Directory.Delete("Sandcastle\\sources");
+                Directory.Delete("sources");
             }
 
-            Directory.CreateDirectory("Sandcastle\\sources");
+            Directory.CreateDirectory("sources");
 
             foreach (var file in Directory.GetDirectories("LocalRepo").SelectMany(s => Directory.GetFiles($"{s}\\lib\\net45")))
             {
-                File.Copy(file, $"Sandcastle\\sources\\{Path.GetFileName(file)}");
+                File.Copy(file, $"sources\\{Path.GetFileName(file)}");
             }
 
             #endregion
@@ -87,7 +87,7 @@ namespace Documentation_Builder
             p.StartInfo.CreateNoWindow = false;
             p.StartInfo.UseShellExecute = false;
             p.StartInfo.FileName = @"C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe";
-            p.StartInfo.Arguments = "Sandcastle\\Sandcastle.shfbproj /p:Configuration=Release /flp:LogFile=Sandcastle.log;Verbosity=Normal";
+            p.StartInfo.Arguments = "Sandcastle.shfbproj /p:Configuration=Release /flp:LogFile=Sandcastle.log;Verbosity=Normal";
             p.Start();
             p.WaitForExit();
 

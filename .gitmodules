@@ -1,0 +1,6 @@
+[submodule "WPILib"]
+	path = WPILib
+	url = https://github.com/robotdotnet/WPILib
+[submodule "NetworkTablesCore"]
+	path = NetworkTablesCore
+	url = https://github.com/robotdotnet/NetworkTablesCore

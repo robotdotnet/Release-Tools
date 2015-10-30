@@ -1,0 +1,23 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+
+<Project toolsversion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <Target Name="GenerateCode" BeforeTargets="Build">
+	<Exec Command="nuget.exe restore WPILib\robotdotnet-wpilib.sln"/>
+	<Exec Command="nuget.exe restore NetworkTablesCore\NetworkTablesCore.sln"/>
+	<MSBuild 
+		Projects="WPILib\robotdotnet-wpilib.sln" Properties="Configuration=AppVeyor"
+	/>	
+	<MSBuild 
+		Projects="NetworkTablesCore\NetworkTablesCore.sln" Properties="Configuration=AppVeyor"
+	/>	
+</Target>
+
+ 
+
+  <Target Name="RunCodeAnalysis" AfterTargets="Build">
+
+    <Message text="GenerateCode target running" importance="high">
+
+  </Message></Target>
+</Project>

@@ -1,18 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics>
-  <Topic id="b5a166d2-9e36-48db-8e16-044823276a02" visible="True" isDefault="true" isSelected="true" title="Welcome to the [TODO: Add project name]">
+  <Topic id="b5a166d2-9e36-48db-8e16-044823276a02" visible="True" isDefault="true" isExpanded="true" apiParentMode="InsertAsChild" title=".NET for FIRST Robotics Competition">
     <HelpKeywords>
-      <HelpKeyword index="K" term="Welcome" />
+      <HelpKeyword index="K" term="FIRST, Robotics" />
     </HelpKeywords>
-  </Topic>
-  <Topic id="f7394038-d3e6-466f-bfdb-70cebdd8afa3" visible="True" isExpanded="true" title="Version History">
-    <HelpKeywords>
-      <HelpKeyword index="K" term="version, history" />
-    </HelpKeywords>
-    <Topic id="89c2b1e6-d4df-40aa-bda4-f758b5abee28" visible="True" title="Version 1.0.0.0">
+    <Topic id="f7394038-d3e6-466f-bfdb-70cebdd8afa3" visible="True" isExpanded="true" title="Version History">
       <HelpKeywords>
-        <HelpKeyword index="K" term="version, 1.0.0.0" />
+        <HelpKeyword index="K" term="version, history" />
       </HelpKeywords>
+      <Topic id="89c2b1e6-d4df-40aa-bda4-f758b5abee28" visible="True" title="Version 2016.0.0.0">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="version" />
+        </HelpKeywords>
+      </Topic>
+    </Topic>
+    <Topic id="97ea22ce-3980-446f-96c5-2d89871a71e8" visible="True" isExpanded="true">
+      <Topic id="c85aadff-f6d3-48a2-8453-ac3eb71b06c5" visible="True" title="How to Install on Windows" />
+      <Topic id="315e628d-551d-49f8-8aee-3e1721b11268" visible="True" title="Installing the Runtime onto the RoboRIO" />
+      <Topic id="170012b3-b0f8-4b6f-9d87-431df0ef0969" visible="True" isSelected="true" title="Creating an Project with the Attributed Robot Model" />
     </Topic>
   </Topic>
 </Topics>

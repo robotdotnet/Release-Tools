@@ -6,10 +6,10 @@
 	<Exec Command="nuget.exe restore WPILib\robotdotnet-wpilib.sln"/>
 	<Exec Command="nuget.exe restore NetworkTablesCore\NetworkTablesCore.sln"/>
 	<MSBuild 
-		Projects="WPILib\robotdotnet-wpilib.sln" Properties="Configuration=AppVeyor"
+		Projects="WPILib\robotdotnet-wpilib.sln" Properties="Configuration=Release"
 	/>	
 	<MSBuild 
-		Projects="NetworkTablesCore\NetworkTablesCore.sln" Properties="Configuration=AppVeyor"
+		Projects="NetworkTablesCore\NetworkTablesCore.sln" Properties="Configuration=Release"
 	/>	
 </Target>
 

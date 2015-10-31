@@ -5,16 +5,24 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "Sandcastle", "Sandcastle\Sandcastle.shfbproj", "{9167D7EE-4462-4A29-B099-DF05BE67A2E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterBuilder", "MasterBuilder\MasterBuilder.csproj", "{52DD542C-AAA5-4CE1-8391-9E342F9A22F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Documentation|Any CPU = Documentation|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{9167D7EE-4462-4A29-B099-DF05BE67A2E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9167D7EE-4462-4A29-B099-DF05BE67A2E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9167D7EE-4462-4A29-B099-DF05BE67A2E5}.Documentation|Any CPU.ActiveCfg = Debug|Any CPU
+		{9167D7EE-4462-4A29-B099-DF05BE67A2E5}.Documentation|Any CPU.Build.0 = Debug|Any CPU
 		{9167D7EE-4462-4A29-B099-DF05BE67A2E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9167D7EE-4462-4A29-B099-DF05BE67A2E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52DD542C-AAA5-4CE1-8391-9E342F9A22F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52DD542C-AAA5-4CE1-8391-9E342F9A22F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52DD542C-AAA5-4CE1-8391-9E342F9A22F9}.Documentation|Any CPU.ActiveCfg = Documentation|Any CPU
+		{52DD542C-AAA5-4CE1-8391-9E342F9A22F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52DD542C-AAA5-4CE1-8391-9E342F9A22F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

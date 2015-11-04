@@ -6,16 +6,66 @@
 
     <!--
     <summary>
-      <para>Optional summary abstract</para>
+      <para>Installing the Mono Runtime</para>
     </summary>
     -->
 
     <introduction>
-      <para>Installing the runtime on the RoboRIO</para>
+      <para>This will guide you through installing Mono on the RoboRIO.</para>
     </introduction>
 
+    <section>
+      <title>Visual Studio Online Installation - Recommended</title>
+      <content>
+        <para>
+          If you do not already have Visual Studio and the FRC extension installed, please 
+          <link xlink:href="c85aadff-f6d3-48a2-8453-ac3eb71b06c5">
+            follow the instructions here.
+          </link>
+          Then follow the steps below.
+        </para>
+        <procedure>
+          <title></title>
+          <steps class="ordered">
+            <step>
+              <content>
+                <para>
+                  Open Visual Studio. If you have not already set your team number, please do so by
+                  going to FRC | Settings.
+                </para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  Go to FRC | Mono and select Download Mono. This will download the proper version of Mono to your system.
+                  A popup will appear after the download has finished asking if you would like to install Mono. Click Yes.
+                </para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  Mono will now be getting installed to the RoboRIO. Once it is finished, a popup will appear weither the
+                  install was successful or not.
+                </para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  If successful, Mono will now be properly installed on your RoboRIO. See Creating your first project
+                  for instructions on how to create a project and deploy it to the RoboRIO.
+                </para>
+              </content>
+            </step>
+          </steps>
+        </procedure>
+      </content>
+    </section>
+
     <!-- Optional procedures followed by optional code example but must have
-         at least one procedure or code example -->
+         at least one procedure or code example 
     <procedure>
       <title>Installing the runtime on the RoboRIO</title>
       <steps class="ordered">
@@ -30,8 +80,8 @@
           </content>
         </step>
       </steps>
-      <!-- <conclusion>Optional conclusion</conclusion> -->
-    </procedure>
+      <! <conclusion>Optional conclusion</conclusion> 
+    </procedure> -->
 
     <!-- <codeExample>Optional code example</codeExample> -->
 

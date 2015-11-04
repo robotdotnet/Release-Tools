@@ -6,7 +6,7 @@
 
     <!--
     <summary>
-      <para>Optional summary abstract</para>
+      <para>Installing the FRC Extension</para>
     </summary>
     -->
 
@@ -55,7 +55,7 @@
           </externalLink>
         </para>
         <para>
-          If your RoboRIO has not been setup for RobotDotNet yet, please see SetupRIO for provisioning instructions. Also please make sure to set your Team Number, by going to FRC | Team Number in Visual Studio after installing the Extension.
+          If your RoboRIO has not been setup for RobotDotNet yet, please see SetupRIO for provisioning instructions. Also please make sure to set your Team Number, by going to FRC | Settings in Visual Studio after installing the Extension.
         </para>
         <para>
           Now that your RoboRIO has been setup, and the FRC extensions have been installed into Visual Studio, you are now ready to create some code and upload it to the robot. Please see our Programmer’s Guide for instructions on this.

@@ -149,10 +149,12 @@
     <Folder Include="media" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Content\CreatingFirstProject.aml" />
     <None Include="Content\HowToInstall.aml" />
     <None Include="Content\AttributedRobot.aml" />
     <None Include="Content\InstallRoboRIO.aml" />
     <None Include="Content\Tutorials and How-tos.aml" />
+    <None Include="Content\UpgradingWPILib.aml" />
     <None Include="Content\VersionHistory\v2016.0.0.0.aml" />
     <None Include="Content\VersionHistory\VersionHistory.aml" />
     <None Include="Content\Welcome.aml" />

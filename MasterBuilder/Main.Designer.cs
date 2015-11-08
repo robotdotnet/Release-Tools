@@ -32,9 +32,10 @@
             this.updateNTButton = new System.Windows.Forms.Button();
             this.updateWPILibButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.releaseNTButton = new System.Windows.Forms.Button();
-            this.releaseWPILibButton = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.releaseWPILibButton = new System.Windows.Forms.Button();
+            this.releaseNTButton = new System.Windows.Forms.Button();
+            this.LoadPackagesButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -78,14 +79,14 @@
             this.panel2.Size = new System.Drawing.Size(200, 100);
             this.panel2.TabIndex = 1;
             // 
-            // releaseNTButton
+            // button3
             // 
-            this.releaseNTButton.Location = new System.Drawing.Point(4, 4);
-            this.releaseNTButton.Name = "releaseNTButton";
-            this.releaseNTButton.Size = new System.Drawing.Size(193, 23);
-            this.releaseNTButton.TabIndex = 0;
-            this.releaseNTButton.Text = "Build NetworkTables NuGet";
-            this.releaseNTButton.UseVisualStyleBackColor = true;
+            this.button3.Location = new System.Drawing.Point(3, 62);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(193, 23);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "button1";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // releaseWPILibButton
             // 
@@ -96,20 +97,31 @@
             this.releaseWPILibButton.Text = "button1";
             this.releaseWPILibButton.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // releaseNTButton
             // 
-            this.button3.Location = new System.Drawing.Point(3, 62);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(193, 23);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "button1";
-            this.button3.UseVisualStyleBackColor = true;
+            this.releaseNTButton.Location = new System.Drawing.Point(4, 4);
+            this.releaseNTButton.Name = "releaseNTButton";
+            this.releaseNTButton.Size = new System.Drawing.Size(193, 23);
+            this.releaseNTButton.TabIndex = 0;
+            this.releaseNTButton.Text = "Build NetworkTables NuGet";
+            this.releaseNTButton.UseVisualStyleBackColor = true;
+            // 
+            // LoadPackagesButton
+            // 
+            this.LoadPackagesButton.Location = new System.Drawing.Point(386, 16);
+            this.LoadPackagesButton.Name = "LoadPackagesButton";
+            this.LoadPackagesButton.Size = new System.Drawing.Size(146, 23);
+            this.LoadPackagesButton.TabIndex = 2;
+            this.LoadPackagesButton.Text = "Load Newest Packages";
+            this.LoadPackagesButton.UseVisualStyleBackColor = true;
+            this.LoadPackagesButton.Click += new System.EventHandler(this.LoadPackagesButton_Click);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(664, 356);
+            this.Controls.Add(this.LoadPackagesButton);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Main";
@@ -130,6 +142,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button releaseWPILibButton;
         private System.Windows.Forms.Button releaseNTButton;
+        private System.Windows.Forms.Button LoadPackagesButton;
     }
 }
 

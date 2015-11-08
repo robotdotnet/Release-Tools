@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MasterBuilder.Packages;
+using MasterBuilder.Repositories;
 
 namespace MasterBuilder
 {
@@ -30,6 +32,24 @@ namespace MasterBuilder
         private void updateNTButton_Click(object sender, EventArgs e)
         {
             SubmoduleUpdater.UpdateNTSubmodule();
+        }
+
+        private readonly NetworkTablesFactory m_ntFactory = new NetworkTablesFactory();
+        private readonly WPILibFactory m_wpiFactory = new WPILibFactory();
+
+        private async void LoadPackagesButton_Click(object sender, EventArgs e)
+        {
+            LoadPackagesButton.Enabled = false;
+            try
+            {
+                await Task.WhenAll(m_ntFactory.DownloadAllPackages(), m_wpiFactory.DownloadAllPackages());
+            }
+            catch (Exception xe)
+            {
+                Console.WriteLine(xe.StackTrace);
+                throw;
+            }
+            LoadPackagesButton.Enabled = true;
         }
     }
 }

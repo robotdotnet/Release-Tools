@@ -27,28 +27,28 @@
         <step>
           <content>
             <para>
-              <link xlink:href="#iterative">Iterative Robot:</link>
+              <link xlink:href="#iterative">Iterative Robot: The Iterative Robot base class </link>
             </para>
           </content>
         </step>
         <step>
           <content>
             <para>
-              <link xlink:href="#command">Iterative Robot:</link>
+              <link xlink:href="#command">Command Based Robot:</link>
             </para>
           </content>
         </step>
         <step>
           <content>
             <para>
-              <link xlink:href="#labview">Iterative Robot:</link>
+              <link xlink:href="#labview">LabVIEW Style Robot:</link>
             </para>
           </content>
         </step>
         <step>
           <content>
             <para>
-              <link xlink:href="#attributedcommand">Iterative Robot:</link>
+              <link xlink:href="#attributedcommand">Attributed Command Based Robot:</link>
             </para>
           </content>
         </step>

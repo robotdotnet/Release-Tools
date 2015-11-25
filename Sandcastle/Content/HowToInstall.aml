@@ -28,7 +28,11 @@
           After Visual Studio has been installed, open it, and then go to Tools | Extensions and Updates. Then select Online and search for “FRC Extension”. Click download on the FRC Extension.
         </para>
         <para>
-          If your RoboRIO has not been setup for RobotDotNet yet, please see SetupRIO for provisioning instructions. Also please make sure to set your Team Number, by going to FRC | Team Number in Visual Studio after installing the Extension.
+          If your RoboRIO has not been setup for RobotDotNet yet, please see
+          <link xlink:href="315e628d-551d-49f8-8aee-3e1721b11268">
+            this link for provisioning instructions
+          </link>
+          . Also please make sure to set your Team Number, by going to FRC | Team Number in Visual Studio after installing the Extension.
         </para>
         <para>
           Now that your RoboRIO has been setup, and the FRC extensions have been installed into Visual Studio, you are now ready to create some code and upload it to the robot. Please see our Programmer’s Guide for instructions on this.
@@ -55,7 +59,11 @@
           </externalLink>
         </para>
         <para>
-          If your RoboRIO has not been setup for RobotDotNet yet, please see SetupRIO for provisioning instructions. Also please make sure to set your Team Number, by going to FRC | Settings in Visual Studio after installing the Extension.
+          If your RoboRIO has not been setup for RobotDotNet yet, please see
+          <link xlink:href="315e628d-551d-49f8-8aee-3e1721b11268">
+            SetupRIO for provisioning instructions
+          </link>
+          . Also please make sure to set your Team Number, by going to FRC | Team Number in Visual Studio after installing the Extension.
         </para>
         <para>
           Now that your RoboRIO has been setup, and the FRC extensions have been installed into Visual Studio, you are now ready to create some code and upload it to the robot. Please see our Programmer’s Guide for instructions on this.
@@ -121,15 +129,16 @@
       <codeEntityReference>API member ID</codeEntityReference>
 
       Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+-->
+      <link xlink:href="315e628d-551d-49f8-8aee-3e1721b11268">Installing the Runtime on the RoboRIO</link>
+      <link xlink:href="83a0dc5f-fb15-4210-a7a9-75275dca4ab6">Creating your first robot project</link>
 
       <externalLink>
-          <linkText>SHFB on GitHub</linkText>
+          <linkText>RobotDotNet on GitHub</linkText>
           <linkAlternateText>Go to GitHub</linkAlternateText>
-          <linkUri>https://GitHub.com/EWSoftware/SHFB</linkUri>
+          <linkUri>https://GitHub.com/RobotDotNet</linkUri>
       </externalLink>
-
+<!--
       <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
       <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
       <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>

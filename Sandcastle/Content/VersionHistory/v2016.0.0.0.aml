@@ -17,9 +17,6 @@
                         <para>
                             The <codeEntityReference>N:WPILib.Extras.AttributedCommandModel</codeEntityReference> was released.
                         </para>
-                        <para>
-                            Extensive support for the NavX MXP released in the <codeEntityReference>N:WPILib.Extras.NavX</codeEntityReference> namespace.
-                        </para>
                     </listItem>
 
                 </list>
@@ -29,6 +26,12 @@
 
         <relatedTopics>
             <link xlink:href="f7394038-d3e6-466f-bfdb-70cebdd8afa3" />
+            
+            <externalLink>
+          <linkText>RobotDotNet on GitHub</linkText>
+          <linkAlternateText>Go to GitHub</linkAlternateText>
+          <linkUri>https://GitHub.com/RobotDotNet</linkUri>
+      </externalLink>
         </relatedTopics>
 
     </developerConceptualDocument>

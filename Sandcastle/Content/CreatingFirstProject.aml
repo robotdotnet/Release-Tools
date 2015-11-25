@@ -177,26 +177,7 @@
 
     
 
-    <!-- Optional procedures followed by optional code example but must have
-         at least one procedure or code example -->
-    <procedure>
-      <title>Creating an Iterative Robot</title>
-
-      <steps class="ordered">
-        <step>
-          <content>
-            <para>Go to File | New | Project</para>
-          </content>
-        </step>
-        <step>
-          <content>
-            <para>In Visual C#, go to the FRC folder, and select <legacyBold>Iterative Robot</legacyBold>.
-          </para>
-          </content>
-        </step>
-      </steps>
-      <!-- <conclusion>Optional conclusion</conclusion> -->
-    </procedure>
+   
 
     <!-- <codeExample>Optional code example</codeExample> -->
 
@@ -209,6 +190,13 @@
     <!-- <security>Optional discussion of security issues.</security> -->
 
     <relatedTopics>
+      <link xlink:href="45c801c5-c35c-4939-a03e-9924749b0f32">Upgrading WPILib</link>
+
+      <externalLink>
+          <linkText>RobotDotNet on GitHub</linkText>
+          <linkAlternateText>Go to GitHub</linkAlternateText>
+          <linkUri>https://GitHub.com/RobotDotNet</linkUri>
+      </externalLink>
       <!-- One or more of the following:
            - A local link
            - An external link

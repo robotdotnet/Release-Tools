@@ -40,29 +40,7 @@
       <!-- <conclusion>Optional conclusion</conclusion> -->
     </procedure>
 
-    <!-- Optional additional procedure or section with procedure -->
-    <section address="Section1">
-      <title>Optional section title</title>
-      <content>
-        <procedure>
-          <title>Procedure #2</title>
-          <steps class="ordered">
-            <step>
-              <content>
-                <para>First step</para>
-              </content>
-            </step>
-            <step>
-              <content>
-                <para>Second step</para>
-              </content>
-            </step>
-          </steps>
-          <!-- <conclusion>Optional conclusion</conclusion> -->
-        </procedure>
-      </content>
-    </section>
-
+    
     <!-- Optional next steps info
     <nextSteps>
       <content><para>Next steps info goes here</para></content>
@@ -70,6 +48,11 @@
     -->
 
     <relatedTopics>
+    <externalLink>
+          <linkText>RobotDotNet on GitHub</linkText>
+          <linkAlternateText>Go to GitHub</linkAlternateText>
+          <linkUri>https://GitHub.com/RobotDotNet</linkUri>
+      </externalLink>
       <!-- One or more of the following:
            - A local link
            - An external link

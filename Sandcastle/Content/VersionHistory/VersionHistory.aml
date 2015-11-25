@@ -21,6 +21,11 @@ life of the project.</para>
 
 		<relatedTopics>
 			<link xlink:href="b5a166d2-9e36-48db-8e16-044823276a02" />
+			<externalLink>
+          <linkText>RobotDotNet on GitHub</linkText>
+          <linkAlternateText>Go to GitHub</linkAlternateText>
+          <linkUri>https://GitHub.com/RobotDotNet</linkUri>
+      </externalLink>
 		</relatedTopics>
 
 	</developerConceptualDocument>

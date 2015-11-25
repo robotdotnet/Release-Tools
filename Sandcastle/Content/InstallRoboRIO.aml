@@ -46,7 +46,58 @@
             <step>
               <content>
                 <para>
-                  Mono will now be getting installed to the RoboRIO. Once it is finished, a popup will appear weither the
+                  Mono will now be getting installed to the RoboRIO. Once it is finished, a popup will appear indicating if the
+                  install was successful or not.
+                </para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  If successful, Mono will now be properly installed on your RoboRIO. See Creating your first project
+                  for instructions on how to create a project and deploy it to the RoboRIO.
+                </para>
+              </content>
+            </step>
+          </steps>
+        </procedure>
+      </content>
+    </section>
+    
+    
+    <section>
+      <title>Offline Installation</title>
+      <content>
+        <para>
+          If you do not already have Visual Studio and the FRC extension installed, please 
+          <link xlink:href="c85aadff-f6d3-48a2-8453-ac3eb71b06c5">
+            follow the instructions here.
+          </link>
+          Then follow the steps below.
+        </para>
+        <procedure>
+          <title></title>
+          <steps class="ordered">
+            <step>
+              <content>
+                <para>
+                  Open Visual Studio. If you have not already set your team number, please do so by
+                  going to FRC | Settings.
+                </para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  Go to FRC | Mono and select Install Mono. If Mono has not been downloaded to the current system, it will ask if you would
+                  like to look for it.
+                </para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  Mono will now be getting installed to the RoboRIO. Once it is finished, a popup will appear indicating if the
                   install was successful or not.
                 </para>
               </content>
@@ -94,6 +145,13 @@
     <!-- <security>Optional discussion of security issues.</security> -->
 
     <relatedTopics>
+      <link xlink:href="83a0dc5f-fb15-4210-a7a9-75275dca4ab6">Creating your first robot project</link>
+
+      <externalLink>
+          <linkText>RobotDotNet on GitHub</linkText>
+          <linkAlternateText>Go to GitHub</linkAlternateText>
+          <linkUri>https://GitHub.com/RobotDotNet</linkUri>
+      </externalLink>
       <!-- One or more of the following:
            - A local link
            - An external link

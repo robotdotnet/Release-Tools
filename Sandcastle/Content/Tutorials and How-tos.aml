@@ -54,6 +54,13 @@
         </para>
       </content>
     </section>
-    <relatedTopics></relatedTopics>
+      <relatedTopics>
+  <externalLink>
+          <linkText>RobotDotNet on GitHub</linkText>
+          <linkAlternateText>Go to GitHub</linkAlternateText>
+          <linkUri>https://GitHub.com/RobotDotNet</linkUri>
+      </externalLink>
+      </relatedTopics>
   </developerConceptualDocument>
+
 </topic>

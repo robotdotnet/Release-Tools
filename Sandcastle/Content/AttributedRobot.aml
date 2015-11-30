@@ -4,65 +4,112 @@
     xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
     xmlns:xlink="http://www.w3.org/1999/xlink">
 
-    <!--
     <summary>
-      <para>Optional summary abstract</para>
+      <para>
+          The Attributed Robot Model is a new way of creating a Command-Based Robot that removes nearly all of the boilerplate code (aka hookup code, like the usual OI class) usually required.
+          This model uses a process called "reflection" to find the subsystems and commands and hook them up correctly.  Consequently, the robot will take a little longer (read: a second or two) to initialize upon startup, but the difference is not noticable in most situations.
+      </para>
     </summary>
-    -->
 
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
+      <autoOutline />
 
       <para>Creating an Project with the Attributed Robot Model</para>
     </introduction>
 
-    <!-- <prerequisites><content>Optional prerequisites info</content></prerequisites> -->
+    <prerequisites><content>
+        <para>
+            This tutorial requires the WPILib.Extras NuGet package to be installed
+        </para>
+    </content></prerequisites>
 
     <!-- One or more procedure or section with procedure -->
     <procedure>
-      <title>Creating an Project with the Attributed Robot Model</title>
+      <title>Creating a basic project with the Attributed Robot Model</title>
       <steps class="ordered">
         <step>
           <content>
-            <para>First step</para>
+            <para>Create a new robot project using the Attributed Command Robot template.  You should see the following files:</para>
+            <definitionTable>
+                <definedTerm>ProjectName.cs</definedTerm>
+                <definition>
+                <para>
+                    This contains your Robot class.
+                    Your robot class derives from the <codeEntityReference>T:WPILib.Extras.AttributedCommandModel.AttributedRobot</codeEntityReference> class.
+                    This class sets everything up to execute when you want it to.
+                </para>
+                </definition>
+                <definedTerm>RobotMap.cs</definedTerm>
+                <definition>
+                <para>
+                    This class should have the ports defined for each piece of hardware attached to the robot as constants.
+                </para>
+                </definition>
+                <definedTerm>Program.cs</definedTerm>
+                <definition>
+                <para>
+                    This class contains the entry point to the project.  You should never have to edit this file.
+                </para>
+                </definition>
+                <definedTerm>Subsystems/ExampleSubsystem.cs</definedTerm>
+                <definition>
+                <para>
+                    This class is an example subsystem that will automatically be set up and have its default command set to be an instance of <codeInline>ExampleCommand</codeInline>.
+                </para>
+                </definition>
+                <definedTerm>Commands/ExampleCommand.cs</definedTerm>
+                <definition>
+                <para>
+                    This class is an example command that is automatically set up as the default command for an instance of <codeInline>ExampleSubsystem</codeInline>.
+                    NOTE: It MUST have the constructor taking an <codeInline>ExampleSubsystem</codeInline> for it to work.
+                </para>
+                </definition>
+                <definedTerm>Commands/ExampleAutonomousCommand.cs</definedTerm>
+                <definition>
+                <para>
+                    This class is an example command that is automatically set up to start when the robot enters Autonomous mode.
+                    NOTE: It does not require the constructor taking an <codeInline>ExampleSubsystem</codeInline> for it to work, but that is the only way for it to <codeInline>Require</codeInline> the subsystem.
+                </para>
+                </definition>
+            </definitionTable>
           </content>
         </step>
         <step>
           <content>
-            <para>Second step</para>
+            <para>To add a new subsystem, right click on your project and click Add > New Item.  Create a Subsystem.
+            This is the same template as used for a Command-Based Robot.  To make it automatically load, add the following code on a new line before <codeInline>class</codeInline>:
+              (Note: this is called adding an attribute to the class)</para>
+            <code>
+                [WPILib.Extras.AttributedCommandModel.ExportSubsystem]
+            </code>
+          <para>
+              The subsystem will now automatically load.  To specify a default command, use the following:
+          </para>
+              <code>
+                [WPILib.Extras.AttributedCommandModel.ExportSubsystem(DefaultCommandType=typeof(CommandType))]
+              </code>
+              <para>Where <codeInline>CommandType</codeInline> is the type of the command.</para>
           </content>
         </step>
+          <step>
+              <content>
+                  <para>
+                      To add a new command, right click on your project and click Add > New Item.  Create a Command.
+                      This is the same template as used for a Command-Based Robot.  To set it up to auto-load, there are a few different ways: default command, phase command, and button command.
+                      The default command is configured on the respective subsystem as seen above.
+                      If your command is a default command, it MUST have a constructor that takes ONLY an instance of the subsystem it is the default command for, or your project will fail to run.
+                      To set it up as a phase command, add the RunCommandAtPhaseStart attribute to the commmand class.  You will have to specify which phase to start the command on with the <codeInline>MatchPhase</codeInline> enumeration.
+                      If your command acts on a button, you will have to pick the correct attribute.  There is one attribute for each of the different button classes.  Use the correct method (and pass in the required parameters),
+                       and the library will automatically set up the command to execute when you want it to.
+                  </para>
+              </content>
+          </step>
       </steps>
       <!-- <conclusion>Optional conclusion</conclusion> -->
     </procedure>
 
     <!-- Optional additional procedure or section with procedure -->
-    <section address="Section1">
-      <title>Customizing your Robot Further</title>
-      <content>
-        <procedure>
-          <title>Customizing your Robot Further</title>
-          <steps class="ordered">
-            <step>
-              <content>
-                <para>First step</para>
-              </content>
-            </step>
-            <step>
-              <content>
-                <para>Second step</para>
-              </content>
-            </step>
-          </steps>
-          <!-- <conclusion>Optional conclusion</conclusion> -->
-        </procedure>
-      </content>
-    </section>
-
+      
     <!-- Optional next steps info
     <nextSteps>
       <content><para>Next steps info goes here</para></content>
@@ -101,6 +148,7 @@
       <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
       <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
       -->
+       <codeEntityReference>N:WPILib.Extras.AttributedCommandModel</codeEntityReference>
     </relatedTopics>
   </developerWalkthroughDocument>
 </topic>

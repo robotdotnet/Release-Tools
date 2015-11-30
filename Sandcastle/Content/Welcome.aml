@@ -2,8 +2,7 @@
 <topic id="b5a166d2-9e36-48db-8e16-044823276a02" revisionNumber="1">
     <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
         <introduction>
-            <para>This is a sample conceptual topic.  You can use this as a starting point for adding more conceptual
-content to your help project.</para>
+            <para>Welcome to RobotDotNet. </para>
         </introduction>
 
         <section>

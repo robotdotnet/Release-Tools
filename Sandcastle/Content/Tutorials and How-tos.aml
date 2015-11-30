@@ -26,22 +26,34 @@
     <section address="Install">
       <title>Installation tutorials</title>
       <content>
-          <para>
-              <link xlink:href="c85aadff-f6d3-48a2-8453-ac3eb71b06c5" />
-          </para>
-          <para>
-              <link xlink:href="315e628d-551d-49f8-8aee-3e1721b11268" />
-          </para>
+        <para>
+          <link xlink:href="c85aadff-f6d3-48a2-8453-ac3eb71b06c5" />
+        </para>
+        <para>
+          <link xlink:href="315e628d-551d-49f8-8aee-3e1721b11268" />
+        </para>
+        
       </content>
     </section>
-      <section address="CodingModels">
-          <title>Programming with the .NET library's exclusive features</title>
-          <content>
-              <para>
-                  <link xlink:href="170012b3-b0f8-4b6f-9d87-431df0ef0969" />
-              </para>
-          </content>
-      </section>
-      <relatedTopics></relatedTopics>
+    <section address="GettingStarted">
+      <title>Getting started with FRC Programming</title>
+      <content>
+        <para>
+          <link xlink:href="83a0dc5f-fb15-4210-a7a9-75275dca4ab6" />
+        </para>
+        <para>
+          <link xlink:href="45c801c5-c35c-4939-a03e-9924749b0f32" />
+        </para>
+      </content>
+    </section>
+    <section address="CodingModels">
+      <title>Programming with the .NET library's exclusive features</title>
+      <content>
+        <para>
+          <link xlink:href="170012b3-b0f8-4b6f-9d87-431df0ef0969" />
+        </para>
+      </content>
+    </section>
+    <relatedTopics></relatedTopics>
   </developerConceptualDocument>
 </topic>

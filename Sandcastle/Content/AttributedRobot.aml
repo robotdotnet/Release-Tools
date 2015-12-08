@@ -11,15 +11,9 @@
       </para>
     </summary>
 
-    <introduction>
-      <autoOutline />
-
-      <para>Creating an Project with the Attributed Robot Model</para>
-    </introduction>
-
     <prerequisites><content>
         <para>
-            This tutorial requires the WPILib.Extras NuGet package to be installed
+            This tutorial requires the WPILib.Extras NuGet package to be installed.
         </para>
     </content></prerequisites>
 

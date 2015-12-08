@@ -17,23 +17,50 @@
            zero (0) to limit it to top-level sections only.  -->
       <!-- <autoOutline /> -->
 
-      <para>Required introduction</para>
+      <para>Upgrading the WPILib is easy, and can be done using NuGet. Whenever an official update to the WPILib is released, all related packages will be upgraded in NuGet.</para>
     </introduction>
 
     <!-- <prerequisites><content>Optional prerequisites info</content></prerequisites> -->
 
     <!-- One or more procedure or section with procedure -->
     <procedure>
-      <title>Procedure title</title>
+      <title>Upgrading all projects in the solution graphically.</title>
       <steps class="ordered">
         <step>
           <content>
-            <para>First step</para>
+            <para>This assumes you are using Visual Studio 2015 with NuGet version 3.3. The steps will be similar for older versions, but not the same.</para>
           </content>
         </step>
         <step>
           <content>
-            <para>Second step</para>
+            <para>Right click on you solution in Visual Studio</para>
+          </content>
+        </step>
+      </steps>
+      <!-- <conclusion>Optional conclusion</conclusion> -->
+    </procedure>
+
+    <procedure>
+      <title>Upgrading all projects in the solution using the Package Manager Console.</title>
+      <steps class="ordered">
+        <step>
+          <content>
+            <para>The Package Manager Console can be opened by clicking Tools | NuGet Package Manager | Package Manager Console</para>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>In the tabs at the botton of Visual Studio, you will see the Package Manager Console. Select it.</para>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>To upgrade all packages in all projects, </para>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>In the tabs at the botton of Visual Studio, you will see the Package Manager Console. Select it.</para>
           </content>
         </step>
       </steps>

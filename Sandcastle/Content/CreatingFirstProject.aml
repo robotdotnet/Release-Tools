@@ -14,180 +14,51 @@
       <para>You are now ready to create your first FRC project using dotnet.</para>
     </introduction>
 
-    <procedure>
-      <title>Available Templates</title>
-      <steps class="bullet">
-        <step>
-          <content>
-            <para>
-              <link xlink:href="#sample">Sample Robot:</link>
-            </para>
-          </content>
-        </step>
-        <step>
-          <content>
-            <para>
-              <link xlink:href="#iterative">Iterative Robot: The Iterative Robot base class </link>
-            </para>
-          </content>
-        </step>
-        <step>
-          <content>
-            <para>
-              <link xlink:href="#command">Command Based Robot:</link>
-            </para>
-          </content>
-        </step>
-        <step>
-          <content>
-            <para>
-              <link xlink:href="#labview">LabVIEW Style Robot:</link>
-            </para>
-          </content>
-        </step>
-        <step>
-          <content>
-            <para>
-              <link xlink:href="#attributedcommand">Attributed Command Based Robot:</link>
-            </para>
-          </content>
-        </step>
-      </steps>
-    </procedure>
-
-    <section address="sample">
-      <title>Creating a Sample Robot Project</title>
-      <content>
-        <para>
-          Start by clicking the <legacyBold>File</legacyBold> menu, pointing to <legacyBold>New</legacyBold>,
-          and then clicking <legacyBold>Project</legacyBold>.
-        </para>
-        <para>
-          In the Visual C# list, select <legacyBold>FRC</legacyBold>, then select <legacyBold>Sample Robot</legacyBold>.
-        </para>
-        <para>
-          Enter a project name, a folder you would like to place your code in, and a name for the solution.
-        </para>
-        <para>
-          Click <legacyBold>OK</legacyBold>. This will then create your first project.
-        </para>
-        <para>
-          Now that your project is created, we recommend that you update the WPILib, as the extension might not always
-          include the newest WPILib. See <link xlink:href="45c801c5-c35c-4939-a03e-9924749b0f32">Upgrading WPILib</link>
-          for instructions on doing this.
-        </para>
-      </content>
-    </section>
-
     <section>
-      <title>Creating an Iterative Robot Project</title>
+      <title>Creating a project.</title>
       <content>
         <para>
-          Start by clicking the <legacyBold>File</legacyBold> menu, pointing to <legacyBold>New</legacyBold>,
-          and then clicking <legacyBold>Project</legacyBold>.
-        </para>
-        <para>
-          In the Visual C# list, select <legacyBold>FRC</legacyBold>, then select <legacyBold>Iterative Robot</legacyBold>.
-        </para>
-        <para>
-          Enter a project name, a folder you would like to place your code in, and a name for the solution.
-        </para>
-        <para>
-          Click <legacyBold>OK</legacyBold>. This will then create your first project.
-        </para>
-        <para>
-          Now that your project is created, we recommend that you update the WPILib, as the extension might not always
-          include the newest WPILib. See <link xlink:href="45c801c5-c35c-4939-a03e-9924749b0f32">Upgrading WPILib</link>
-          for instructions on doing this.
+          <para>
+            Start by clicking the <legacyBold>File</legacyBold> menu, pointing to <legacyBold>New</legacyBold>,
+            and then clicking <legacyBold>Project</legacyBold>.
+          </para>
+          <para>
+            In the Visual C# list, select <legacyBold>FRC</legacyBold>, then select the base class you would like to use. For more 
+            information on which base class to use, see the <link xlink:href="#baseclass">Selecting a Base Class</link> section below.
+          </para>
+          <para>
+            Enter a project name, a folder you would like to place your code in, and a name for the solution.
+          </para>
+          <para>
+            Click <legacyBold>OK</legacyBold>. This will then create your first project.
+          </para>
+          <para>
+            Now that your project is created, we recommend that you update the WPILib, as the extension might not always
+            include the newest WPILib. See <link xlink:href="45c801c5-c35c-4939-a03e-9924749b0f32">Upgrading WPILib</link>
+            for instructions on doing this.
+          </para>
         </para>
       </content>
     </section>
 
-    <section>
-      <title>Creating a Command Based Robot Project</title>
+
+    <section address="baseclass">
+      <title>Selecting a base class.</title>
       <content>
         <para>
-          Start by clicking the <legacyBold>File</legacyBold> menu, pointing to <legacyBold>New</legacyBold>,
-          and then clicking <legacyBold>Project</legacyBold>.
+          RobotDotNet offers 5 base classes to start from. 3 of them (Sample Robot, Iterative Robot, and Command Robot) are implementations of the official WPILib base classes. For more information on these, please see
+          <externalLink>
+            <linkText>the official WPILib help on these base classes.</linkText>
+            <linkUri>https://wpilib.screenstepslive.com/s/4485/m/13810/l/241853-choosing-a-base-class</linkUri>
+          </externalLink>
+          However, if you would like to use the Command Robot template, please have a look at the <link xlink:href="170012b3-b0f8-4b6f-9d87-431df0ef0969">Attributed Command Robot</link> base class, which allows for even easier command based robot impl
         </para>
         <para>
-          In the Visual C# list, select <legacyBold>FRC</legacyBold>, then select <legacyBold>Command Robot</legacyBold>.
-        </para>
-        <para>
-          Enter a project name, a folder you would like to place your code in, and a name for the solution.
-        </para>
-        <para>
-          Click <legacyBold>OK</legacyBold>. This will then create your first project.
-        </para>
-        <para>
-          Now that your project is created, we recommend that you update the WPILib, as the extension might not always
-          include the newest WPILib. See <link xlink:href="45c801c5-c35c-4939-a03e-9924749b0f32">Upgrading WPILib</link>
-          for instructions on doing this.
+          RobotDotNet also offers 2 custom base classes. The <link xlink:href="170012b3-b0f8-4b6f-9d87-431df0ef0969">Attributed Command Robot</link> base class allows for creating command based robots while removing most of the boilerplate code usually required. 
+          The LabVIEW style base class is designed to help teams who are transitioning from LabVIEW to text based code, with some of the base methods named similarly to LabVIEW, and Autonomous and Test modes running in their own thread.
         </para>
       </content>
     </section>
-
-    <section>
-      <title>Creating a LabVIEW Style Robot Project</title>
-      <content>
-        <para>
-          Start by clicking the <legacyBold>File</legacyBold> menu, pointing to <legacyBold>New</legacyBold>,
-          and then clicking <legacyBold>Project</legacyBold>.
-        </para>
-        <para>
-          In the Visual C# list, select <legacyBold>FRC</legacyBold>, then select <legacyBold>LabVIEW Style Robot</legacyBold>.
-        </para>
-        <para>
-          Enter a project name, a folder you would like to place your code in, and a name for the solution.
-        </para>
-        <para>
-          Click <legacyBold>OK</legacyBold>. This will then create your first project.
-        </para>
-        <para>
-          Now that your project is created, we recommend that you update the WPILib, as the extension might not always
-          include the newest WPILib. See <link xlink:href="45c801c5-c35c-4939-a03e-9924749b0f32">Upgrading WPILib</link>
-          for instructions on doing this.
-        </para>
-      </content>
-    </section>
-
-    <section>
-      <title>Creating an Attributed Command Style Project</title>
-      <content>
-        <para>
-          Start by clicking the <legacyBold>File</legacyBold> menu, pointing to <legacyBold>New</legacyBold>,
-          and then clicking <legacyBold>Project</legacyBold>.
-        </para>
-        <para>
-          In the Visual C# list, select <legacyBold>FRC</legacyBold>, then select <legacyBold>Attributed Command Robot</legacyBold>.
-        </para>
-        <para>
-          Enter a project name, a folder you would like to place your code in, and a name for the solution.
-        </para>
-        <para>
-          Click <legacyBold>OK</legacyBold>. This will then create your first project.
-        </para>
-        <para>
-          Now that your project is created, we recommend that you update the WPILib, as the extension might not always
-          include the newest WPILib. See <link xlink:href="45c801c5-c35c-4939-a03e-9924749b0f32">Upgrading WPILib</link>
-          for instructions on doing this.
-        </para>
-      </content>
-    </section>
-
-    
-
-   
-
-    <!-- <codeExample>Optional code example</codeExample> -->
-
-    <!-- <buildInstructions>Optional instructions for building a
-         code example.</buildInstructions> -->
-
-    <!-- <robustProgramming>Optional discussion of error handling and other
-         issues related to writing solid code.</robustProgramming> -->
-
-    <!-- <security>Optional discussion of security issues.</security> -->
 
     <relatedTopics>
       <link xlink:href="45c801c5-c35c-4939-a03e-9924749b0f32">Upgrading WPILib</link>
@@ -197,6 +68,9 @@
           <linkAlternateText>Go to GitHub</linkAlternateText>
           <linkUri>https://GitHub.com/RobotDotNet</linkUri>
       </externalLink>
+
+      <codeEntityReference>N:WPILib.Extras.AttributedCommandModel</codeEntityReference>
+      <codeEntityReference>T:WPILib.Extras.LabViewRobot</codeEntityReference>
       <!-- One or more of the following:
            - A local link
            - An external link

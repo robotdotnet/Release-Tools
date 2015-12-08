@@ -11,7 +11,7 @@
     -->
 
     <introduction>
-      <para>This will guide you through installing Mono on the RoboRIO.</para>
+      <para>This will guide you through installing Mono on the RoboRIO. Please perform these steps either USB or Ethernetconnected to the RoboRIO. Wireless is not recommended.</para>
     </introduction>
 
     <section>
@@ -78,6 +78,18 @@
         <procedure>
           <title></title>
           <steps class="ordered">
+         	 <step>
+              <content>
+                <para>
+                  You can download the Mono runtime on another system using the download link here. 
+                  <externalLink>
+                  	<linkText>Download Mono 4.2.1</linkText>
+                  	<linkUri>https://dl.bintray.com/robotdotnet/Mono/Mono4.2.1.zip</linkUri>
+                  </externalLink>
+                  Then copy this zip file to the system connected to the RoboRIO, and follow the steps below.
+                </para>
+              </content>
+            </step>
             <step>
               <content>
                 <para>
@@ -90,7 +102,7 @@
               <content>
                 <para>
                   Go to FRC | Mono and select Install Mono. If Mono has not been downloaded to the current system, it will ask if you would
-                  like to look for it.
+                  like to look for it. Click yes, and then search for the downloaded file.
                 </para>
               </content>
             </step>

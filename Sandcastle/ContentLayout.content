@@ -18,7 +18,8 @@
       <Topic id="c85aadff-f6d3-48a2-8453-ac3eb71b06c5" visible="True" title="How to Install on Windows" />
       <Topic id="315e628d-551d-49f8-8aee-3e1721b11268" visible="True" title="Installing the Runtime onto the RoboRIO" />
       <Topic id="83a0dc5f-fb15-4210-a7a9-75275dca4ab6" visible="True" title="Creating your first FRC Project" />
-      <Topic id="170012b3-b0f8-4b6f-9d87-431df0ef0969" visible="True" isSelected="true" title="Creating an Project with the Attributed Robot Model" />
+      <Topic id="170012b3-b0f8-4b6f-9d87-431df0ef0969" visible="True" title="Creating an Project with the Attributed Robot Model" />
+      <Topic id="0c9aca86-82a6-48d8-8e2b-a198bedf8d76" visible="True" isSelected="true" title="Creating an Project using the LabVIEW style base class" />
       <Topic id="45c801c5-c35c-4939-a03e-9924749b0f32" visible="True" title="Upgrading WPILib" />
     </Topic>
   </Topic>

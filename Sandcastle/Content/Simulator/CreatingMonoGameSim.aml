@@ -7,21 +7,88 @@
     </summary>
     -->
     <introduction>
-      <para>Required introduction</para>
+      <para>MonoGame is the recommended front end for creating simulators. Below are the steps to get the basic simulator working. </para>
     </introduction>
     <!-- Optional procedures followed by optional code example but must have
          at least one procedure or code example -->
     <procedure>
-      <title>Procedure title</title>
+      <title>Installing MonoGame and creating a MonoGame Project</title>
       <steps class="ordered">
         <step>
           <content>
-            <para>First step</para>
+            <para>
+              Install the latest MonoGame release for your operating system. Follow the instructions at the link to get it installed.
+              <externalLink>
+                <linkText>The current release is 3.4.</linkText>
+                <linkUri>http://www.monogame.net/2015/04/29/monogame-3-4/</linkUri>
+              </externalLink>
+            </para>
           </content>
         </step>
         <step>
           <content>
-            <para>Second step</para>
+            <para>Open your solution with your main robot project.</para>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>Right click on your solution file in Visual Studio, and select Add | New Project.</para>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>On the left, you should see a template folder for MonoGame. Select that, and the select the right template for your OS. 
+            For the name, it can be anything, however it is best for it to have no spaces in it.</para>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>Your new project should be created, and you should have at least 2 projects in your solution.</para>
+          </content>
+        </step>
+      </steps>
+      <!-- <conclusion>Optional conclusion</conclusion> -->
+    </procedure>
+
+
+    <procedure>
+      <title>Linking the MonoGame project to your robot project.</title>
+      <steps class="ordered">
+        <step>
+          <content>
+            <para>
+              For this to work properly, your output folder for the MonoGame project must be the same between debug and release modes. The easiest way to do this is to
+              right click on the simulator project, then click Properties. In there, click Build, and set <c>OutputPath</c> to <c>Output\</c>. Then switch build modes
+              using the toolbar in Visual Studio, and do the same thing as before in the other mode.
+            </para>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>Add a reference to your main robot project in the simulator project. To do this, right click on the simulator projects References option,
+            then click Add Reference. Click <c>Projects</c>, and check your main robot project. Then click OK.
+            </para>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>
+              Use NuGet to add a reference to the FRC MonoGame Simulator.
+            </para>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>Build your solution to make sure all the files get placed in the right spot.
+            </para>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>Right click on your main robot project, and click Properties. Click Debug. Here you need to set two different things. 
+            First select Start External Program, and navigate to the Robot Executable in the MonoGame output folder. Note do not select
+            the MonoGame executable. Do this for both Debug and Release Modes.
+            You will need to do this on every system. We are working on a better solution to this for next year.</para>
           </content>
         </step>
       </steps>

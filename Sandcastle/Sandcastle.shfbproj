@@ -146,12 +146,16 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Win32' ">
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="Content\Simulator\" />
     <Folder Include="Content" />
     <Folder Include="Content\VersionHistory" />
     <Folder Include="icons" />
     <Folder Include="media" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Content\Simulator\CreatingMonoGameSim.aml" />
+    <None Include="Content\Simulator\Simulator.aml" />
+    <None Include="Content\Simulator\Simulator.aml" />
     <None Include="Content\CreatingFirstProject.aml" />
     <None Include="Content\HowToInstall.aml" />
     <None Include="Content\AttributedRobot.aml" />

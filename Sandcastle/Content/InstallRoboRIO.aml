@@ -11,7 +11,8 @@
     -->
 
     <introduction>
-      <para>This will guide you through installing Mono on the RoboRIO. Please perform these steps either USB or Ethernetconnected to the RoboRIO. Wireless is not recommended.</para>
+      <para>This will guide you through installing Mono on the RoboRIO. Please perform these steps either USB or Ethernetconnected to the RoboRIO. Wireless is not recommended.
+      Note that you need to make sure you have imaged your RoboRIO following FIRST's instructions, which can be found here.</para>
     </introduction>
 
     <section>

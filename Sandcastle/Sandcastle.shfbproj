@@ -153,6 +153,7 @@
     <Folder Include="media" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Content\WritingandRunningFirst.aml" />
     <None Include="Content\Simulator\ShooterWheel.aml" />
     <None Include="Content\Simulator\CreatingMonoGameSim.aml" />
     <None Include="Content\Simulator\Simulator.aml" />

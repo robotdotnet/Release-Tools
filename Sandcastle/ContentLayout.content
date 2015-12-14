@@ -20,13 +20,14 @@
       <Topic id="83a0dc5f-fb15-4210-a7a9-75275dca4ab6" visible="True" title="Creating your first FRC Project" />
       <Topic id="170012b3-b0f8-4b6f-9d87-431df0ef0969" visible="True" title="Creating an Project with the Attributed Robot Model" />
       <Topic id="0c9aca86-82a6-48d8-8e2b-a198bedf8d76" visible="True" title="Creating an Project using the LabVIEW style base class" />
-      <Topic id="a06b3cf0-236f-4c9c-981a-7fc577a996dc" visible="True" isSelected="true" title="Writing and Running your first robot program" />
+      <Topic id="a06b3cf0-236f-4c9c-981a-7fc577a996dc" visible="True" title="Writing and Running your first robot program" />
       <Topic id="45c801c5-c35c-4939-a03e-9924749b0f32" visible="True" title="Upgrading WPILib" />
     </Topic>
     <Topic id="dd407359-e4c9-4adc-b0e5-4bc51a64e569" visible="True" isExpanded="true" title="Simulator Support">
       <Topic id="e754f6a3-c404-4582-aac8-819d47185cbc" visible="True" isExpanded="true" title="Creating a Mono Game Simulator">
         <Topic id="738e105c-f130-4b4b-ac30-17be3e81c3d8" visible="True" title="Implementing a Shooter Wheel Mechanism" />
       </Topic>
+      <Topic id="8c677017-0be0-4506-a948-ab0ccbe805ae" visible="True" isSelected="true" title="Running the MonoGame Simulator" />
     </Topic>
   </Topic>
 </Topics>

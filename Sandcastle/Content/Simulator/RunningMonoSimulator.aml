@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<topic id="dd407359-e4c9-4adc-b0e5-4bc51a64e569" revisionNumber="1">
+<topic id="8c677017-0be0-4506-a948-ab0ccbe805ae" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!--
     <summary>
@@ -13,25 +13,28 @@
            zero (0) to limit it to top-level sections only.  -->
       <!-- <autoOutline /> -->
       <para>
-        One advantage of RobotDotNet over the official WPILib is built in support for simulation.
-        We have support for building your own robot simulator, which is currently supported using MonoGame.
-        In addition, even if you do not have a simulator, your robot executable will run on the local computer,
-        which will allow you to verify that your code does not throw exceptions on startup.
+        Once the MonoGame simultor project has been created, it is easy to get it running. As long is it is the startup project,
+        whenever you click the Start button in Visual Studio it will run. Note that the robot project does NOT need to be the startup
+        project in order for it to be deployed properly to the robot. The extension will automatically find the robot project and
+        deploy it.
       </para>
     </introduction>
     <!-- Add one or more top-level section elements.  These are collapsible.
          If using <autoOutline />, add an address attribute to identify it
          and specify a title so that it can be jumped to with a hyperlink. -->
     <section address="Section1">
-      <title>MonoGame Simulators</title>
+      <title>Controlling the Driver Station</title>
       <content>
         <!-- Uncomment this to create a sub-section outline
         <autoOutline /> -->
         <para>
-          <link xlink:href="e754f6a3-c404-4582-aac8-819d47185cbc"/>
+          The MonoGame simulator includes a custom DriverStation for controlling your robot code.
+          This is similar to the offical DriverStation for enabling and Disabling the robot,
+          however joystick are different.
         </para>
         <para>
-          <link xlink:href="8c677017-0be0-4506-a948-ab0ccbe805ae"/>
+          On the right side of the window, you will see 4 control boxes. These allow you to select which joysticks
+          is sent to the robot.
         </para>
       </content>
       <!-- If a section contains a sections element, its content creates

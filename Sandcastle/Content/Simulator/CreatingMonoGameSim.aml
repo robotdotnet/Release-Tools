@@ -46,8 +46,9 @@
         <step>
           <content>
             <para>
-              Your solution should now have 2 projects in it, with the simulator set as the startup project.
-              See Running the Simulator for instructions on how to run it, and individual mechanism pages for specifics.
+              Your solution should now have 2 projects in it, with the simulator set as the startup project. Note that this is correct,
+              and you do not need to have the main robot project as the startup project in order for it to deploy correctly.
+              See <link xlink:href="8c677017-0be0-4506-a948-ab0ccbe805ae"/> for instructions on how to run it, and individual mechanism pages for specifics.
             </para>
           </content>
         </step>

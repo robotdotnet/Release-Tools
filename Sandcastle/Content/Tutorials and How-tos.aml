@@ -42,6 +42,9 @@
           <link xlink:href="83a0dc5f-fb15-4210-a7a9-75275dca4ab6" />
         </para>
         <para>
+          <link xlink:href="a06b3cf0-236f-4c9c-981a-7fc577a996dc" />
+        </para>
+        <para>
           <link xlink:href="45c801c5-c35c-4939-a03e-9924749b0f32" />
         </para>
       </content>
@@ -54,6 +57,17 @@
         </para>
         <para>
           <link xlink:href="0c9aca86-82a6-48d8-8e2b-a198bedf8d76" />
+        </para>
+      </content>
+    </section>
+    <section address="Simulation">
+      <title>Developing and Running a Simulator</title>
+      <content>
+        <para>
+          <link xlink:href="dd407359-e4c9-4adc-b0e5-4bc51a64e569"/>
+        </para>
+        <para>
+          <link xlink:href="e754f6a3-c404-4582-aac8-819d47185cbc"/>
         </para>
       </content>
     </section>

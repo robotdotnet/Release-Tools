@@ -17,7 +17,7 @@
       <title>Online Installation - Windows</title>
       <content>
         <para>
-          If you do not already have Visual Studio 2013 or newer installed, then you will need to install Visual Studio. We recommend Visual Studio 2015 Community, which can be found 
+          If you do not already have Visual Studio 2013 or newer installed, then you will need to install Visual Studio. We recommend Visual Studio 2015 Community, which can be found
           <externalLink>
             <linkText>Here.</linkText>
             <linkUri>https://www.visualstudio.com/products/vs-2015-product-editions</linkUri>
@@ -82,7 +82,7 @@
         </para>
       </content>
     </section>
-    
+
     <!-- Optional procedures followed by optional code example but must have
          at least one procedure or code example 
     <procedure>
@@ -134,11 +134,11 @@
       <link xlink:href="83a0dc5f-fb15-4210-a7a9-75275dca4ab6">Creating your first robot project</link>
 
       <externalLink>
-          <linkText>RobotDotNet on GitHub</linkText>
-          <linkAlternateText>Go to GitHub</linkAlternateText>
-          <linkUri>https://GitHub.com/RobotDotNet</linkUri>
+        <linkText>RobotDotNet on GitHub</linkText>
+        <linkAlternateText>Go to GitHub</linkAlternateText>
+        <linkUri>https://GitHub.com/RobotDotNet</linkUri>
       </externalLink>
-<!--
+      <!--
       <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
       <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
       <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>

@@ -58,7 +58,7 @@
               <definedTerm>Test</definedTerm>
               <definition>
                 <para>
-                  This method is equivalent to Test.vi. It runs in its own thread, and is called once only when the robot first enters test mode. 
+                  This method is equivalent to Test.vi. It runs in its own thread, and is called once only when the robot first enters test mode.
                   Note that this includes Test Disabled, and its state will not switch when switching between enabled and disabled test modes.
                 </para>
               </definition>
@@ -70,7 +70,7 @@
           <content>
             <para>
               When dealing with threads, it is important to note that the threads will be aborted when switching modes. This means you should not use any functionality
-              that requires cleanup, such as writing to a log file. If you must, you can try and catch the ThreadAbortedException, and run your cleanup code there. 
+              that requires cleanup, such as writing to a log file. If you must, you can try and catch the ThreadAbortedException, and run your cleanup code there.
               However, you have to make sure to not cancel the abort, as this will lock up the robot code. In addition, please do not start another thread,
               as the library will not be able to clean up that thread, and it will continue to run.
             </para>

@@ -32,7 +32,7 @@
         <para>
           <link xlink:href="315e628d-551d-49f8-8aee-3e1721b11268" />
         </para>
-        
+
       </content>
     </section>
     <section address="GettingStarted">
@@ -71,13 +71,13 @@
         </para>
       </content>
     </section>
-      <relatedTopics>
-  <externalLink>
-          <linkText>RobotDotNet on GitHub</linkText>
-          <linkAlternateText>Go to GitHub</linkAlternateText>
-          <linkUri>https://GitHub.com/RobotDotNet</linkUri>
+    <relatedTopics>
+      <externalLink>
+        <linkText>RobotDotNet on GitHub</linkText>
+        <linkAlternateText>Go to GitHub</linkAlternateText>
+        <linkUri>https://GitHub.com/RobotDotNet</linkUri>
       </externalLink>
-      </relatedTopics>
+    </relatedTopics>
   </developerConceptualDocument>
 
 </topic>

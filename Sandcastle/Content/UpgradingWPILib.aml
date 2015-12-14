@@ -67,7 +67,7 @@
       <!-- <conclusion>Optional conclusion</conclusion> -->
     </procedure>
 
-    
+
     <!-- Optional next steps info
     <nextSteps>
       <content><para>Next steps info goes here</para></content>
@@ -75,10 +75,10 @@
     -->
 
     <relatedTopics>
-    <externalLink>
-          <linkText>RobotDotNet on GitHub</linkText>
-          <linkAlternateText>Go to GitHub</linkAlternateText>
-          <linkUri>https://GitHub.com/RobotDotNet</linkUri>
+      <externalLink>
+        <linkText>RobotDotNet on GitHub</linkText>
+        <linkAlternateText>Go to GitHub</linkAlternateText>
+        <linkUri>https://GitHub.com/RobotDotNet</linkUri>
       </externalLink>
       <!-- One or more of the following:
            - A local link

@@ -23,7 +23,7 @@
             and then clicking <legacyBold>Project</legacyBold>.
           </para>
           <para>
-            In the Visual C# list, select <legacyBold>FRC</legacyBold>, then select the base class you would like to use. For more 
+            In the Visual C# list, select <legacyBold>FRC</legacyBold>, then select the base class you would like to use. For more
             information on which base class to use, see the <link xlink:href="#baseclass">Selecting a Base Class</link> section below.
           </para>
           <para>
@@ -54,7 +54,7 @@
           However, if you would like to use the Command Robot template, please have a look at the <link xlink:href="170012b3-b0f8-4b6f-9d87-431df0ef0969">Attributed Command Robot</link> base class, which allows for even easier command based robot impl
         </para>
         <para>
-          RobotDotNet also offers 2 custom base classes. The <link xlink:href="170012b3-b0f8-4b6f-9d87-431df0ef0969">Attributed Command Robot</link> base class allows for creating command based robots while removing most of the boilerplate code usually required. 
+          RobotDotNet also offers 2 custom base classes. The <link xlink:href="170012b3-b0f8-4b6f-9d87-431df0ef0969">Attributed Command Robot</link> base class allows for creating command based robots while removing most of the boilerplate code usually required.
           The LabVIEW style base class is designed to help teams who are transitioning from LabVIEW to text based code, with some of the base methods named similarly to LabVIEW, and Autonomous and Test modes running in their own thread.
         </para>
       </content>
@@ -64,9 +64,9 @@
       <link xlink:href="45c801c5-c35c-4939-a03e-9924749b0f32">Upgrading WPILib</link>
 
       <externalLink>
-          <linkText>RobotDotNet on GitHub</linkText>
-          <linkAlternateText>Go to GitHub</linkAlternateText>
-          <linkUri>https://GitHub.com/RobotDotNet</linkUri>
+        <linkText>RobotDotNet on GitHub</linkText>
+        <linkAlternateText>Go to GitHub</linkAlternateText>
+        <linkUri>https://GitHub.com/RobotDotNet</linkUri>
       </externalLink>
 
       <codeEntityReference>N:WPILib.Extras.AttributedCommandModel</codeEntityReference>

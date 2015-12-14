@@ -11,15 +11,17 @@
     -->
 
     <introduction>
-      <para>This will guide you through installing Mono on the RoboRIO. Please perform these steps either USB or Ethernetconnected to the RoboRIO. Wireless is not recommended.
-      Note that you need to make sure you have imaged your RoboRIO following FIRST's instructions, which can be found here.</para>
+      <para>
+        This will guide you through installing Mono on the RoboRIO. Please perform these steps either USB or Ethernetconnected to the RoboRIO. Wireless is not recommended.
+        Note that you need to make sure you have imaged your RoboRIO following FIRST's instructions, which can be found here.
+      </para>
     </introduction>
 
     <section>
       <title>Visual Studio Online Installation - Recommended</title>
       <content>
         <para>
-          If you do not already have Visual Studio and the FRC extension installed, please 
+          If you do not already have Visual Studio and the FRC extension installed, please
           <link xlink:href="c85aadff-f6d3-48a2-8453-ac3eb71b06c5">
             follow the instructions here.
           </link>
@@ -64,13 +66,13 @@
         </procedure>
       </content>
     </section>
-    
-    
+
+
     <section>
       <title>Offline Installation</title>
       <content>
         <para>
-          If you do not already have Visual Studio and the FRC extension installed, please 
+          If you do not already have Visual Studio and the FRC extension installed, please
           <link xlink:href="c85aadff-f6d3-48a2-8453-ac3eb71b06c5">
             follow the instructions here.
           </link>
@@ -79,13 +81,13 @@
         <procedure>
           <title></title>
           <steps class="ordered">
-         	 <step>
+            <step>
               <content>
                 <para>
-                  You can download the Mono runtime on another system using the download link here. 
+                  You can download the Mono runtime on another system using the download link here.
                   <externalLink>
-                  	<linkText>Download Mono 4.2.1</linkText>
-                  	<linkUri>https://dl.bintray.com/robotdotnet/Mono/Mono4.2.1.zip</linkUri>
+                    <linkText>Download Mono 4.2.1</linkText>
+                    <linkUri>https://dl.bintray.com/robotdotnet/Mono/Mono4.2.1.zip</linkUri>
                   </externalLink>
                   Then copy this zip file to the system connected to the RoboRIO, and follow the steps below.
                 </para>
@@ -161,9 +163,9 @@
       <link xlink:href="83a0dc5f-fb15-4210-a7a9-75275dca4ab6">Creating your first robot project</link>
 
       <externalLink>
-          <linkText>RobotDotNet on GitHub</linkText>
-          <linkAlternateText>Go to GitHub</linkAlternateText>
-          <linkUri>https://GitHub.com/RobotDotNet</linkUri>
+        <linkText>RobotDotNet on GitHub</linkText>
+        <linkAlternateText>Go to GitHub</linkAlternateText>
+        <linkUri>https://GitHub.com/RobotDotNet</linkUri>
       </externalLink>
       <!-- One or more of the following:
            - A local link

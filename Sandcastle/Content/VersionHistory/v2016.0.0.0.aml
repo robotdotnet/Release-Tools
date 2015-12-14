@@ -1,38 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="89c2b1e6-d4df-40aa-bda4-f758b5abee28" revisionNumber="1">
-    <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <introduction>
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+        Version 2016.0.0.0 was released for FRC Stronghold Kickoff (Season 2016).
+      </para>
+    </introduction>
+
+    <section>
+      <title>Changes in This Release</title>
+      <content>
+
+        <list class="bullet">
+          <listItem>
+            <para>Full compatibility with WPILib</para>
             <para>
-                Version 2016.0.0.0 was released for FRC Stronghold Kickoff (Season 2016).
+              The <codeEntityReference>N:WPILib.Extras.AttributedCommandModel</codeEntityReference> was released.
             </para>
-        </introduction>
+          </listItem>
 
-        <section>
-            <title>Changes in This Release</title>
-            <content>
+        </list>
 
-                <list class="bullet">
-                    <listItem>
-                        <para>Full compatibility with WPILib</para>
-                        <para>
-                            The <codeEntityReference>N:WPILib.Extras.AttributedCommandModel</codeEntityReference> was released.
-                        </para>
-                    </listItem>
+      </content>
+    </section>
 
-                </list>
+    <relatedTopics>
+      <link xlink:href="f7394038-d3e6-466f-bfdb-70cebdd8afa3" />
 
-            </content>
-        </section>
-
-        <relatedTopics>
-            <link xlink:href="f7394038-d3e6-466f-bfdb-70cebdd8afa3" />
-            
-            <externalLink>
-          <linkText>RobotDotNet on GitHub</linkText>
-          <linkAlternateText>Go to GitHub</linkAlternateText>
-          <linkUri>https://GitHub.com/RobotDotNet</linkUri>
+      <externalLink>
+        <linkText>RobotDotNet on GitHub</linkText>
+        <linkAlternateText>Go to GitHub</linkAlternateText>
+        <linkUri>https://GitHub.com/RobotDotNet</linkUri>
       </externalLink>
-        </relatedTopics>
+    </relatedTopics>
 
-    </developerConceptualDocument>
+  </developerConceptualDocument>
 </topic>

@@ -18,7 +18,7 @@
         <para>
           Once you have your robot project created, you can view all of the API Documentation for the individual namespaces.
           The WPILib namespace will be the main one you use for Robot code, and the HAL.Simulator namespace will
-          be the main namespace eyou will use for writing simulators.
+          be the main namespace you will use for writing simulators.
         </para>
       </content>
     </section>

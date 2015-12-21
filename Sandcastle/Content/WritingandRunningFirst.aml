@@ -19,7 +19,10 @@
 
       <para>
         Once you have your robot project created, you are ready to start programming. We are still working on our own documentation
-        for this, but for now you can look at FIRST's Java and C++ documentation to get the basics. You can also find our API documentation here.
+        for this, but for now you can look at FIRST's Java and C++ documentation to get the basics. You can also find our
+        <codeEntityReference linkText="API documentation here">
+          G:WPILib
+        </codeEntityReference>.
         Once you have that, the steps below will walk you through the process of deploying the code to the robot.
       </para>
     </introduction>
@@ -47,9 +50,51 @@
       <!-- <conclusion>Optional conclusion</conclusion> -->
     </procedure>
 
+    <section>
+      <title>Extra Deploy Features</title>
+      <content>
+        <para>
+          RobotDotNet has support for some extra deploy features as well. These can be found in the settings menu, which can be accessed by clicking on FRC, then clicking
+          Settings.
+        </para>
+        <para>
+          The first setting is <legacyBold>Enable Netconsole.</legacyBold> This will enable the netconsole window on every deploy.
+        </para>
+      <para>
+          The second setting is <legacyBold>Send command line arguements.</legacyBold> This will enable the command line arguements
+          found in the visual studio project file to be deployed to the RoboRIO.
+        </para>
+      </content>
+
+    </section>
+
+    <section>
+      <title>Troubleshooting</title>
+      <content>
+        <para>
+          If the wrong robot project is being deployed, it is possible your project is an old version, or the robot setting has been lost.
+          To solve this, right click on the project you want to be the main robot project, and click <legacyBold>Set Main Robot Project</legacyBold>.
+          The proper project should now deploy.
+        </para>
+        <para>
+          If you receive a message saying the runtime is not installed, make sure the runtime is installed by following the
+          <link xlink:href="315e628d-551d-49f8-8aee-3e1721b11268">steps here.</link>
+        </para>
+        <para>
+          If you receive a message saying the image is not correct, follow FIRSTs instruction for imaging the RoboRIO. Then you will have to reinstall the Runtime.
+          Instructions for both of these can be found <link xlink:href="315e628d-551d-49f8-8aee-3e1721b11268">here.</link>
+        </para>
+        <para>
+          If you receive a message saying it could not find all the needed files, make sure you are running the newest WPILib and newest Extension.
+          Instructions for upgrading the extension can be found <link xlink:href="c85aadff-f6d3-48a2-8453-ac3eb71b06c5">here.</link> Instructions for
+          upgrading WPILib can be found <link xlink:href="45c801c5-c35c-4939-a03e-9924749b0f32">here.</link>
+        </para>
+      </content>
+    </section>
+
     <!-- Optional additional procedure or section with procedure -->
     <section address="Section1">
-      <title>Optional section title</title>
+      <title>Extra Deploy Features</title>
       <content>
         <procedure>
           <title>Procedure #2</title>

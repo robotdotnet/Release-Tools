@@ -13,7 +13,7 @@
 
         <list class="bullet">
           <listItem>
-            <para>Full compatibility with WPILib</para>
+            <para>Initial release with full compatibility of the WPILib</para>
             <para>
               The <codeEntityReference>N:WPILib.Extras.AttributedCommandModel</codeEntityReference> was released.
             </para>

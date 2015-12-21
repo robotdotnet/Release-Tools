@@ -51,7 +51,7 @@
             <linkText>the official WPILib help on these base classes.</linkText>
             <linkUri>https://wpilib.screenstepslive.com/s/4485/m/13810/l/241853-choosing-a-base-class</linkUri>
           </externalLink>
-          However, if you would like to use the Command Robot template, please have a look at the <link xlink:href="170012b3-b0f8-4b6f-9d87-431df0ef0969">Attributed Command Robot</link> base class, which allows for even easier command based robot impl
+          However, if you would like to use the Command Robot template, please have a look at the <link xlink:href="170012b3-b0f8-4b6f-9d87-431df0ef0969">Attributed Command Robot</link> base class, which allows for even easier command based robot creation.
         </para>
         <para>
           RobotDotNet also offers 2 custom base classes. The <link xlink:href="170012b3-b0f8-4b6f-9d87-431df0ef0969">Attributed Command Robot</link> base class allows for creating command based robots while removing most of the boilerplate code usually required.

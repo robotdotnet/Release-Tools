@@ -37,13 +37,15 @@
           <content>
             <para>
               Make sure you have installed the Runtime and set your team number in Visual Studio. The deploy process will check
-              for these, and display popups to solve these problems if they occur.
+              for these, and any errors will be displayed in the console window at the bottom of Visual Studio.
             </para>
           </content>
         </step>
         <step>
           <content>
-            <para>Second step</para>
+            <para>Click on the <legacyBold>FRC</legacyBold> menu, and then click <legacyBold>Deploy Code</legacyBold>. This will deploy your code
+            to the robot. 
+          </para>
           </content>
         </step>
       </steps>
@@ -60,9 +62,15 @@
         <para>
           The first setting is <legacyBold>Enable Netconsole.</legacyBold> This will enable the netconsole window on every deploy.
         </para>
-      <para>
-          The second setting is <legacyBold>Send command line arguements.</legacyBold> This will enable the command line arguements
+        <para>
+          The second setting is <legacyBold>Send command line arguments.</legacyBold> This will enable the command line arguements
           found in the visual studio project file to be deployed to the RoboRIO.
+        </para>
+        <para>
+          There are also Verbose and Debug options. Verbose mode will output to the console all files and commands being sent to the RoboRIO
+          in order to facilitate debugging. Debug mode will force the startup project to be the deployed project, rather then the project set
+          using the Set Main Robot Project button. We recommend you leave debug mode off unless you have an issue, as it will break
+          easy simulator support.
         </para>
       </content>
 
@@ -89,29 +97,6 @@
           Instructions for upgrading the extension can be found <link xlink:href="c85aadff-f6d3-48a2-8453-ac3eb71b06c5">here.</link> Instructions for
           upgrading WPILib can be found <link xlink:href="45c801c5-c35c-4939-a03e-9924749b0f32">here.</link>
         </para>
-      </content>
-    </section>
-
-    <!-- Optional additional procedure or section with procedure -->
-    <section address="Section1">
-      <title>Extra Deploy Features</title>
-      <content>
-        <procedure>
-          <title>Procedure #2</title>
-          <steps class="ordered">
-            <step>
-              <content>
-                <para>First step</para>
-              </content>
-            </step>
-            <step>
-              <content>
-                <para>Second step</para>
-              </content>
-            </step>
-          </steps>
-          <!-- <conclusion>Optional conclusion</conclusion> -->
-        </procedure>
       </content>
     </section>
 

@@ -32,10 +32,11 @@
           <link xlink:href="315e628d-551d-49f8-8aee-3e1721b11268">
             this link for provisioning instructions
           </link>
-          . Also please make sure to set your Team Number, by going to FRC | Team Number in Visual Studio after installing the Extension.
+          . Also please make sure to set your Team Number, by going to FRC | Settings in Visual Studio after installing the Extension.
         </para>
         <para>
-          Now that your RoboRIO has been setup, and the FRC extensions have been installed into Visual Studio, you are now ready to create some code and upload it to the robot. Please see our Programmer’s Guide for instructions on this.
+          Now that your RoboRIO has been setup, and the FRC extensions have been installed into Visual Studio, you are now ready to create some code and upload it to the robot. Please see 
+          <link xlink:href="83a0dc5f-fb15-4210-a7a9-75275dca4ab6">Creating your first robot project</link> for instructions on how to do this.
         </para>
       </content>
     </section>
@@ -63,10 +64,11 @@
           <link xlink:href="315e628d-551d-49f8-8aee-3e1721b11268">
             SetupRIO for provisioning instructions
           </link>
-          . Also please make sure to set your Team Number, by going to FRC | Team Number in Visual Studio after installing the Extension.
+          . Also please make sure to set your Team Number, by going to FRC | Settings in Visual Studio after installing the Extension.
         </para>
         <para>
-          Now that your RoboRIO has been setup, and the FRC extensions have been installed into Visual Studio, you are now ready to create some code and upload it to the robot. Please see our Programmer’s Guide for instructions on this.
+          Now that your RoboRIO has been setup, and the FRC extensions have been installed into Visual Studio, you are now ready to create some code and upload it to the robot. Please see 
+          <link xlink:href="83a0dc5f-fb15-4210-a7a9-75275dca4ab6">Creating your first robot project</link> for instructions on how to do this.
         </para>
       </content>
     </section>

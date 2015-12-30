@@ -12,8 +12,9 @@
 
     <introduction>
       <para>
-        This will guide you through installing Mono on the RoboRIO. Please perform these steps either USB or Ethernetconnected to the RoboRIO. Wireless is not recommended.
-        Note that you need to make sure you have imaged your RoboRIO following FIRST's instructions, which can be found here.
+        This will guide you through installing Mono on the RoboRIO. Please perform these steps either USB or Ethernet connected to the RoboRIO. Wireless is not recommended.
+        Note that you need to make sure you have imaged your RoboRIO following FIRST's instructions, which can be 
+        <link xlink:href="https://wpilib.screenstepslive.com/s/4485/m/13503/l/144984-imaging-your-roborio">found here.</link>
       </para>
     </introduction>
 
@@ -41,7 +42,7 @@
             <step>
               <content>
                 <para>
-                  Go to FRC | Mono and select Download Mono. This will download the proper version of Mono to your system.
+                  Go to FRC | Mono Tools and select Download Mono. This will download the proper version of Mono to your system.
                   A popup will appear after the download has finished asking if you would like to install Mono. Click Yes.
                 </para>
               </content>
@@ -57,7 +58,8 @@
             <step>
               <content>
                 <para>
-                  If successful, Mono will now be properly installed on your RoboRIO. See Creating your first project
+                  If successful, Mono will now be properly installed on your RoboRIO. See
+                  <link xlink:href="83a0dc5f-fb15-4210-a7a9-75275dca4ab6">creating your first robot project</link>
                   for instructions on how to create a project and deploy it to the RoboRIO.
                 </para>
               </content>
@@ -104,7 +106,7 @@
             <step>
               <content>
                 <para>
-                  Go to FRC | Mono and select Install Mono. If Mono has not been downloaded to the current system, it will ask if you would
+                  Go to FRC | Mono Tools and select Install Mono. If Mono has not been downloaded to the current system, it will ask if you would
                   like to look for it. Click yes, and then search for the downloaded file.
                 </para>
               </content>
@@ -120,7 +122,8 @@
             <step>
               <content>
                 <para>
-                  If successful, Mono will now be properly installed on your RoboRIO. See Creating your first project
+                  If successful, Mono will now be properly installed on your RoboRIO. See 
+                  <link xlink:href="83a0dc5f-fb15-4210-a7a9-75275dca4ab6">creating your first robot project</link>
                   for instructions on how to create a project and deploy it to the RoboRIO.
                 </para>
               </content>

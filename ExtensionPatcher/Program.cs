@@ -9,13 +9,62 @@ namespace ExtensionPatcher
 {
     class Program
     {
+        private static List<VSTemplatePatcher> templateFiles = new List<VSTemplatePatcher>();
+        private static List<SimulatorTemplatePatcher> simulatorTemplates = new List<SimulatorTemplatePatcher>();
+        private static ExtensionPackagesPatcher patcher = null;
+
         static void Main(string[] args)
         {
+            foreach (var s in Directory.EnumerateFiles("Templates\\CSharp\\Project-Templates", "*.vstemplate", SearchOption.AllDirectories))
+            {
+                if (s.Contains("WindowsMonoGameSimulator"))
+                {
+                    Console.WriteLine("Found Simulator Template File: " + s);
+                    simulatorTemplates.Add(new SimulatorTemplatePatcher(s));
 
+                }
+                else
+                {
+                    Console.WriteLine("Found Template File: " + s);
+                    templateFiles.Add(new VSTemplatePatcher(s));
+                }
+
+            }
+
+            foreach (var s in Directory.EnumerateFiles("Templates\\VisualBasic\\Project-Templates", "*.vstemplate", SearchOption.AllDirectories))
+            { 
+                Console.WriteLine("Found Template File: " + s);
+                templateFiles.Add(new VSTemplatePatcher(s));
+            }
+
+            if (File.Exists("FRC-Extension\\FRC-Extension.csproj"))
+                patcher = new ExtensionPackagesPatcher("FRC-Extension\\FRC-Extension.csproj");
+
+            string wpiLib = null;
+            string wpiLibEtras = null;
+            string simulator = null;
+            string networkTables = null;
+
+            GetPackageVersions(ref wpiLib, ref wpiLibEtras, ref simulator, ref networkTables);
+
+            foreach(var p in templateFiles)
+            {
+                p.Patch(wpiLib, wpiLibEtras, networkTables);
+                p.WriteFile();
+            }
+
+            foreach (var p in simulatorTemplates)
+            {
+                p.Patch(wpiLib, wpiLibEtras, networkTables, simulator);
+                p.WriteFile();
+            }
+
+            patcher.Patch(wpiLib, wpiLibEtras, networkTables, simulator);
+            patcher.WriteFile();
         }
 
 
-        public void GetPackageVersions(ref string wpilib, ref string wpilibExtras, ref string simulator,
+        public static void GetPackageVersions(ref string wpilib, ref string wpilibExtras, ref string simulator,
             ref string networkTables)
         {
             var files = Directory.GetFiles("FRC-Extension\\packages");
@@ -41,7 +90,7 @@ namespace ExtensionPatcher
             }
         }
 
-        public string GetVersionNumber(string file)
+        public static string GetVersionNumber(string file)
         {
             string[] split = file.Split('.');
             StringBuilder builder = new StringBuilder();

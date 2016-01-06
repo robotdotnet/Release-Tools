@@ -7,19 +7,20 @@ using System.Threading.Tasks;
 
 namespace ExtensionPatcher
 {
-    class VSTemplatePatcher
+    class SimulatorTemplatePatcher
     {
         private string[] file;
 
         private int WPILibIndex = -1;
         private int WPILibExtrasIndex = -1;
+        private int SimulatorIndex = -1;
         private int NTIndex = -1;
 
         private bool found = false;
 
         public string FilePath = "";
 
-        public VSTemplatePatcher(string fileName)
+        public SimulatorTemplatePatcher(string fileName)
         {
             FilePath = fileName;
             file = File.ReadAllLines(fileName);
@@ -37,20 +38,25 @@ namespace ExtensionPatcher
                 {
                     NTIndex = i;
                 }
+                if (file[i].Contains("<package id=\"FRC.Simulators.MonoGameSimulator\""))
+                {
+                    SimulatorIndex = i;
+                }
             }
-            if (WPILibIndex != -1 && WPILibExtrasIndex != -1 && NTIndex != -1)
+            if (WPILibIndex != -1 && WPILibExtrasIndex != -1 && NTIndex != -1 && SimulatorIndex != -1)
             {
                 found = true;
             }
         }
 
-        public void Patch(string wpilibVersion, string extrasVersion, string ntVersion)
+        public void Patch(string wpilibVersion, string extrasVersion, string ntVersion, string simVersion)
         {
             if (found)
             {
                 file[WPILibIndex] = $"      <package id=\"FRC.WPILib\" version=\"{wpilibVersion}\"/>";
                 file[WPILibExtrasIndex] = $"      <package id=\"FRC.WPILib.Extras\" version=\"{extrasVersion}\"/>";
                 file[NTIndex] = $"      <package id=\"FRC.NetworkTables\" version=\"{ntVersion}\"/>";
+                file[SimulatorIndex] = $"      <package id=\"FRC.Simulators.MonoGameSimulator\" version=\"{simVersion}\"/>";
             }
         }
 

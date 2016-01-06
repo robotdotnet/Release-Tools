@@ -42,8 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExtensionPackagesPatcher.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimulatorTemplatePatcher.cs" />
     <Compile Include="VSTemplatePatcher.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -85,7 +85,7 @@
     <SdkLinkTarget>Top</SdkLinkTarget>
     <RootNamespaceContainer>False</RootNamespaceContainer>
     <PresentationStyle>VS2013</PresentationStyle>
-    <Preliminary>True</Preliminary>
+    <Preliminary>False</Preliminary>
     <NamingMethod>MemberName</NamingMethod>
     <HelpTitle>.NET for FIRST Robotics Competition</HelpTitle>
     <ContentPlacement>AboveNamespaces</ContentPlacement>

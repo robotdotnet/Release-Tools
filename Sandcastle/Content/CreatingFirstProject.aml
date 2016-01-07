@@ -37,6 +37,10 @@
             include the newest WPILib. See <link xlink:href="45c801c5-c35c-4939-a03e-9924749b0f32">Upgrading WPILib</link>
             for instructions on doing this.
           </para>
+          <para>
+            After that, then see <link xlink:href="a06b3cf0-236f-4c9c-981a-7fc577a996dc">Writing and Running your First Robot Project.</link> for
+            directions on how to deploy code to the RoboRIO.
+          </para>
         </para>
       </content>
     </section>
@@ -62,6 +66,7 @@
 
     <relatedTopics>
       <link xlink:href="45c801c5-c35c-4939-a03e-9924749b0f32">Upgrading WPILib</link>
+      <link xlink:href="a06b3cf0-236f-4c9c-981a-7fc577a996dc">Writing and Running your First Robot Project.</link>
 
       <externalLink>
         <linkText>RobotDotNet on GitHub</linkText>

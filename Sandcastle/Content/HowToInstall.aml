@@ -26,6 +26,7 @@
         </para>
         <para>
           After Visual Studio has been installed, open it, and then go to Tools | Extensions and Updates. Then select Online and search for “FRC Extension”. Click download on the FRC Extension.
+          This will install the extension, then ask you to restart Visual Studio.
         </para>
         <para>
           If your RoboRIO has not been setup for RobotDotNet yet, please see
@@ -57,7 +58,7 @@
           <externalLink>
             <linkText>Here.</linkText>
             <linkUri>https://visualstudiogallery.msdn.microsoft.com/7c7f4cd1-e4bc-43bb-a9f1-072c6f1197d9</linkUri>
-          </externalLink>
+          </externalLink> To install it, run the file, and it will install the extension into Visual Studio.
         </para>
         <para>
           If your RoboRIO has not been setup for RobotDotNet yet, please see

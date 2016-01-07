@@ -17,7 +17,8 @@
            zero (0) to limit it to top-level sections only.  -->
       <!-- <autoOutline /> -->
 
-      <para>Tutorials and How-tos</para>
+      <para>Welcome to the Tutorials section for RobotDotNet. Below you will find instructions on how to set up your build environment and the RoboRIO, and then how to create and deploy your
+      first project.</para>
     </introduction>
 
     <!-- Add one or more top-level section elements.  These are collapsible.

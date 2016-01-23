@@ -2,22 +2,26 @@
 
 <Project toolsversion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-  <Target Name="GenerateCode" BeforeTargets="Build">
-	<Exec Command="nuget.exe restore WPILib\robotdotnet-wpilib.sln"/>
-	<Exec Command="nuget.exe restore NetworkTablesCore\NetworkTablesCore.sln"/>
-	<MSBuild 
-		Projects="WPILib\robotdotnet-wpilib.sln" Properties="Configuration=Release"
-	/>	
-	<MSBuild 
-		Projects="NetworkTablesCore\NetworkTablesCore.sln" Properties="Configuration=Release"
-	/>	
-</Target>
+  <PropertyGroup>
+    <SolutionDir>$(MSBuildThisFileDirectory)</SolutionDir>
+    <Configuration Condition=" '$(Configuration)'=='' ">Release</Configuration>
+    <NuGetExe Condition=" '$(NuGetExe)'=='' ">NuGet.exe</NuGetExe>
+    <NuGetCommand Condition=" '$(NuGetCommand)'=='' AND '$(OS)' == 'Windows_NT'">"$(NuGetExe)"</NuGetCommand>
+    <NuGetCommand Condition=" '$(NuGetCommand)'=='' AND '$(OS)' != 'Windows_NT' ">mono "$(NuGetExe)"</NuGetCommand>
+  </PropertyGroup>
 
- 
+  <Target Name="GenerateCode" BeforeTargets="Build">
+    <Exec Command="$(NuGetCommand) restore WPILib\robotdotnet-wpilib.sln"/>
+    <Exec Command="$(NuGetCommand) restore NetworkTablesCore\NetworkTablesCore.sln"/>
+    <MSBuild
+        Projects="WPILib\robotdotnet-wpilib.sln" Properties="Configuration=$(Configuration)"
+    />
+    <MSBuild
+        Projects="NetworkTablesCore\NetworkTablesCore.sln" Properties="Configuration=$(Configuration)"
+    />
+  </Target>
 
   <Target Name="RunCodeAnalysis" AfterTargets="Build">
-
-    <Message text="GenerateCode target running" importance="high">
-
-  </Message></Target>
+    <Message text="GenerateCode target running" importance="high"></Message>
+  </Target>
 </Project>

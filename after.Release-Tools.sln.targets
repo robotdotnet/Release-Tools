@@ -14,10 +14,10 @@
     <Exec Command="$(NuGetCommand) restore WPILib\robotdotnet-wpilib.sln"/>
     <Exec Command="$(NuGetCommand) restore NetworkTablesCore\NetworkTablesCore.sln"/>
     <MSBuild
-        Projects="WPILib\robotdotnet-wpilib.sln" Properties="Configuration=$(Configuration)"
+        Projects="WPILib\robotdotnet-wpilib.sln" Properties="Configuration=Release"
     />
     <MSBuild
-        Projects="NetworkTablesCore\NetworkTablesCore.sln" Properties="Configuration=$(Configuration)"
+        Projects="NetworkTablesCore\NetworkTablesCore.sln" Properties="Configuration=Release"
     />
   </Target>
 
